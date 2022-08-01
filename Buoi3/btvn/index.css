@@ -1,3 +1,6 @@
 .bang{
     border-collapse:collapse ;
 }
+caption{
+    caption-side: top;
+}
