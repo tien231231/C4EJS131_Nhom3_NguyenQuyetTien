@@ -126,10 +126,10 @@ header {
   padding-bottom: 20px;
   font-weight: 50;
 }
-footer {
+footer  {
   font-size: 20px;
-  color: rgb(190, 190, 190);
-  padding: 30px;
+  color: rgb(245, 243, 243);
+  padding: 60px;
   background-color: black;
   text-align: center;
   display: flex;
