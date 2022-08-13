@@ -55,6 +55,7 @@ header {
   background-image: linear-gradient(indigo, crimson, pink);
 }
 #contaner .content1 .h1 {
+  display: flex;
   color: white;
   font-size: 100px;
   align-self: center;
@@ -68,14 +69,15 @@ header {
   background-image: linear-gradient(90deg, #da7cda 0%, #9face6 100%);
   text-align: center;
 }
-.prj_head {
-  padding: 20px 0px;
+.c2_head {
+  padding: 20px 5px;
   color: #ffffff;
   font-size: 40px;
 }
+
 .courselist {
   display: flex;
-
+  margin: 20px;
   flex-wrap: wrap;
   grid-gap: 150px;
   justify-content: center;
