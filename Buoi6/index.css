@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  position:fixed;
+  position: fixed;
   display: flex;
   background-color: black;
   flex-direction: row;
@@ -17,18 +17,15 @@ header {
   align-items: stretch;
   justify-content: flex-end;
   width: 100%;
-  
 }
-.mi{
-  
+.mi {
   justify-content: flex-start;
   flex-grow: 6;
 }
-.item{
+.item {
   display: flex;
   align-items: center;
   padding: 9px 5px;
-  
 }
 
 .lo a {
@@ -39,9 +36,8 @@ header {
 .item a {
   text-decoration: none;
   color: white;
-  
-  font-size: 20px;
 
+  font-size: 20px;
 }
 .si a {
   margin: 5px 0px;
@@ -79,12 +75,13 @@ header {
 }
 .course {
   display: flex;
-  
+
   flex-wrap: wrap;
   grid-gap: 150px;
   justify-content: center;
 }
-.content , .content .anh{
+.content,
+.content .anh {
   background-color: black;
   color: #ffffff;
   border-radius: 0px 0px 8px 8px;
@@ -92,7 +89,6 @@ header {
   width: 400px;
   height: auto;
 }
-
 
 .project_butt {
   margin: 40px;
