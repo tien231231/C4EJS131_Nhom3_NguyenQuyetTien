@@ -73,15 +73,15 @@ header {
   color: #ffffff;
   font-size: 40px;
 }
-.course {
+.courselist {
   display: flex;
 
   flex-wrap: wrap;
   grid-gap: 150px;
   justify-content: center;
 }
-.content,
-.content .anh {
+.course,
+.course .anh {
   background-color: black;
   color: #ffffff;
   border-radius: 0px 0px 8px 8px;
