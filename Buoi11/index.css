@@ -1,9 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    display: inline;
 }
 #main{
    height: 1000px;
+   
+
 }
 #b,#b2{
     width: 96px;
