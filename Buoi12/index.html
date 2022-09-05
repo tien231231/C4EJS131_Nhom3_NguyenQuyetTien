@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTVNBuoi12</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="reading-list__overlay"></div>
+    <div class="reading-list">
+      <div class="reading-list__header">
+        <h3 class="reading-list__header-h3">Reading List</h3>
+        <span class="reading-list__header-span">Reading list in 2022</span>
+        <input
+          type="text"
+          class="reading-list__header-input"
+          placeholder="Search books..."
+        />
+      </div>
+      <p></p>
+      <div class="reading-list__body">
+        <h4 class="reading-list__body-title">Books to Read</h4>
+        <ul class="reading-list__body-course">
+          <li class="reading-list__body-item">
+            <p class="reading-list__body-item-p">Lập trình web căn bản</p>
+            <button class="reading-list__body-item-btn btn__primary">
+              delete
+            </button>
+          </li>
+          <li class="reading-list__body-item">
+            <p class="reading-list__body-item-p">Lập trình full stack web</p>
+            <button class="reading-list__body-item-btn btn__primary">
+              delete
+            </button>
+          </li>
+          <li class="reading-list__body-item">
+            <p class="reading-list__body-item-p">Lập trình Mobile App</p>
+            <button class="reading-list__body-item-btn btn__primary">
+              delete
+            </button>
+          </li>
+          <li class="reading-list__body-item">
+            <p class="reading-list__body-item-p">Lập trình Node.js</p>
+            <button class="reading-list__body-item-btn btn__primary">
+              delete
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="reading-list__footer">
+        <input
+          type="text"
+          class="reading-list__footer-input"
+          placeholder="Add a book"
+        />
+        <button onclick="newElement()" ondblclick="addClassp()" class="reading-list__footer-btn btn__primary">Add</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>JS</title>
+  <style>
+    .bgStyle {
+      background: green;
+      color: red;
+      padding: 10px;
+    }
+
+    .base {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="addClassFunc()">Add class</button>
+  <button onclick="removeClassFunc()">Remove Class</button>
+  <div id="result" class="base">Hello Javascript</div>
+
+  <script>
+    function addClassFunc() {
+      var result = document.getElementById("result");
+      result.classList.add('bgStyle');
+    }
+
+    function removeClassFunc() {
+      var result = document.getElementById("result");
+      result.classList.remove('bgStyle');
+    }
+  </script>
+</body>
+
+</html>
