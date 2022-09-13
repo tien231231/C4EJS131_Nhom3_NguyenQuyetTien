@@ -1,50 +1,46 @@
+function check_snt(n) {
+  let flag = true;
 
-function calcPrimeNumber(){
-
-    const num1 = parseInt(document.querySelector('num1').value);
-    const num2 = parseInt(document.querySelector('num2').value);
-    const primeNumbs = new Array();
-
-
-    let ctr = num1;
-    while(ctr<=num2)
-    {
-        if(isPrime(ctr)==true)
-        {
-            primeNumbs[primeNumbs.length] = ctr;
-        }
-        ctr = ctr+1;
-
-    }
-
-    if (primeNumbs.length == 0){
-       document.getElementById('return').innerHTML = "There were no prime no within the range.";
-    }
-
-    else {
-        outputPrimeNums(primeNumbs);
-    }
-
-}
-
-function isPrime(num)
-{
-let flag = true;
-for(let i=2; i<=Math.ceil(num/2); i++)
-{
-    if((num%i)==0)
-    {
+  // Nếu n bé hơn 2 tức là không phải số nguyên tố
+  if (n < 2) {
+    flag = false;
+  } else {
+    // lặp từ 2 tới n-1
+    for (var i = 2; i < n - 1; i++) {
+      if (n % i == 0) {
         flag = false;
         break;
+      }
     }
+  }
+  return flag;
 }
-return flag;    
+function hienthisonguyento() {
+  let num1 = parseInt(document.querySelector("#num1").value);
+  let num2 = parseInt(document.querySelector("#num2").value);
+  let arr = [];
+
+  let count = num1;
+  let count2 = 0;
+  while (count <= num2) {
+    if (check_snt(count) == true) {
+      arr[count2] = count;
+      count2 = count2 + 1;
+    }
+
+    count = count + 1;
+  }
+
+  ganvaodiv(arr);
 }
 
-function outputPrimeNums(primes){
-var html = "<h2>Prime Numbers</h2>";
-for (i=0;i<primes.length;i++){
-        html += primes[i] + "<br/>";
-    }
-document.getElementById('returnPrime').innerHTML = html;
+
+
+function ganvaodiv(arr) {
+  var num = "<h1>Kết quả: </h1> ";
+  for (i = 0; i < arr.length; i++) {
+    num = num + arr[i] + " ";
+  }
+  document.querySelector("#kq").innerHTML = num;
 }
+// "<br/> : xuống dòng"
