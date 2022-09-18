@@ -1,5 +1,9 @@
-.text{
+/* .text{
     color: rgba(200, 18, 18, 0.712);
+} */
+.minibox li:nth-child(3),span{
+    color: rgba(200, 18, 18, 0.712);
+
 }
 #box{
     border: 3px dashed black;
@@ -13,7 +17,9 @@
     margin:20px 30px;
     background-color: rgb(68, 142, 247);
 }
+
 h3{
     text-align: center;
+    font-weight: 100;
     line-height: 18.72px;
 }

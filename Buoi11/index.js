@@ -12,4 +12,5 @@ function upElements(){
     
     b2.innerHTML = count;
     count= count+1;
-    }    
+    }  
+let button = addEventListener('d')  

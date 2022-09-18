@@ -44,18 +44,22 @@ console.log(E)
 
 //Bai5
 let F = [1,23,41,5,6,1,14,66,1124,1,1,55,15,0];
-let count=0,count2=0;
-let check4time1 = (v) => {
-    count=count +1;
 
-
-    if(v==1){
-        count2=count2+1;
-        if(count2==4){
-            return count;
+function e1 (num) {
+    return num === 1; //
+  }
+  
+console.log(F.findIndex(e1));
+var arr = [10, 12, 34, 23, 12, 89, 34, 12];
+Array.nthIndexOf = function(e, n) {
+    var index = -1;
+    for (var i = 0, len = this.length; i < len; i++) {
+        if (i in this && e === this[i] && !--n) {
+            index = i;
+            break;
         }
     }
+    return index;
+};
 
-}
-
-console.log(F.forEach(check4time1))
+[10, 12, 34, 23, 12, 89, 34, 12].nthIndexOf(12, 2);
